@@ -13,8 +13,9 @@ module Server
   ##
   # Main Sinatra class, routes incoming requests
   class Base < Sinatra::Base
-    use Rack::SSL
     set :views, 'views'
+
+    use Rack::SSL, :exclude => lambda { !development? }
 
     get(/^\/[\w_-]+\.db(?:\.tar\.[gx]z)?$/) do
       headers 'Cache-Control' => 'max-age=no-cache'
