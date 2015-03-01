@@ -28,9 +28,11 @@ module Server
   ##
   # Main Sinatra class, routes incoming requests
   class Base < Sinatra::Base
-    include SecureHeaders
-
     set :views, 'views'
+
+    before do
+      headers 'Strict-Transport-Security' => 'max-age=2592000'
+    end
 
     get(/^\/[\w_-]+\.db(?:\.tar\.[gx]z)?$/) do
       serve 'repo.db', 500, :no_db
