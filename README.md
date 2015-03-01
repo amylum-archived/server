@@ -1,10 +1,10 @@
 server
 ======
 
-[![Dependency Status](https://img.shields.io/gemnasium/amylum/s3repo.svg)](https://gemnasium.com/amylum/s3repo)
-[![Code Climate](https://img.shields.io/codeclimate/github/amylum/s3repo.svg)](https://codeclimate.com/github/amylum/s3repo)
-[![Coverage Status](https://img.shields.io/coveralls/amylum/s3repo.svg)](https://coveralls.io/r/amylum/s3repo)
-[![Build Status](https://img.shields.io/travis/amylum/s3repo.svg)](https://travis-ci.org/amylum/s3repo)
+[![Dependency Status](https://img.shields.io/gemnasium/amylum/server.svg)](https://gemnasium.com/amylum/server)
+[![Code Climate](https://img.shields.io/codeclimate/github/amylum/server.svg)](https://codeclimate.com/github/amylum/server)
+[![Coverage Status](https://img.shields.io/coveralls/amylum/server.svg)](https://coveralls.io/r/amylum/server)
+[![Build Status](https://img.shields.io/travis/amylum/server.svg)](https://travis-ci.org/amylum/server)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 
 Proxy server for packages stored in S3
