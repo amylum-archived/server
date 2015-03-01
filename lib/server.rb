@@ -28,7 +28,7 @@ module Server
   ##
   # Main Sinatra class, routes incoming requests
   class Base < Sinatra::Base
-    include SecureHeaders
+    #include SecureHeaders
 
     set :views, 'views'
 
