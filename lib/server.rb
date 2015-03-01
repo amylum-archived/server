@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 's3repo'
+require 'rack/ssl'
 
 ##
 # Server module, defines constants and main Sinatra class
@@ -12,11 +13,8 @@ module Server
   ##
   # Main Sinatra class, routes incoming requests
   class Base < Sinatra::Base
+    use Rack::SSL
     set :views, 'views'
-
-    before do
-      headers 'Strict-Transport-Security' => 'max-age=31536000'
-    end
 
     get(/^\/[\w_-]+\.db(?:\.tar\.[gx]z)?$/) do
       headers 'Cache-Control' => 'max-age=no-cache'
