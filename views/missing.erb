@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= @repo %></title>
+  </head>
+  <body>
+    <h2>Package not found</h2>
+    <p>You may want to check <a href="/">the index</a></p>
+    <% if ENV['MAINTAINER_EMAIL'] %>
+      <p>If you're sure this package should exist, contact the maintainer:
+        <a href="mailto:<%= ENV['MAINTAINER_EMAIL'] %>">
+          <%= ENV['MAINTAINER_EMAIL'] %>
+        </a>
+      </p>
+    <% end %>
+  </body>
+</html>

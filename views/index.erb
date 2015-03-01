@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= @repo %></title>
+  </head>
+  <body>
+    <h2><%= @repo %><h2>
+    <h4>Metadata:</h4>
+    <ul>
+      <li><a href="/repo.db">repo.db</a></li>
+    </ul>
+    <h4>Packages:</h4>
+    <ul>
+      <% @packages.each do |package| %>
+        <li><a href="/<%= package.key %>"><%= package.key %></a></li>
+      <% end %>
+    </ul>
+  </body>
+</html>

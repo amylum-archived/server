@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= @repo %></title>
+  </head>
+  <body>
+    <h2>Missing repo DB</h2>
+    <% if ENV['MAINTAINER_EMAIL'] %>
+      <p>Please reach out to the repo administrator:
+        <a href="mailto:<%= ENV['MAINTAINER_EMAIL'] %>">
+          <%= ENV['MAINTAINER_EMAIL'] %>
+        </a>
+      </p>
+    <% end %>
+  </body>
+</html>
