@@ -8,7 +8,9 @@ module Server
   REPO = S3Repo.new
 
   class Base < Sinatra::Base
-    enable :logging
+    before do
+      content_type 'application/octet-stream'
+    end
 
     get %r{^/#{REPO_NAME}\.db(?:\.tar\.gz)?$} do
       REPO.serve 'repo.db'
