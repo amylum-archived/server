@@ -19,11 +19,13 @@ module Server
     end
 
     get(/^\/[\w_-]+\.db(?:\.tar\.[gx]z)?$/) do
+      headers 'Cache-Control' => 'max-age=no-cache'
       serve 'repo.db', 500, :no_db
     end
 
     get(/^\/([\w_.-]+\.pkg\.tar\.xz)$/) do |package|
       halt(404, erb(:missing)) unless REPO.include? package
+      headers 'Cache-Control' => 'max-age=86400'
       serve package, 404, :missing
     end
 
