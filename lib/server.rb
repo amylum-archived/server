@@ -15,7 +15,9 @@ module Server
   class Base < Sinatra::Base
     set :views, 'views'
 
-    use Rack::SSL, :exclude => proc { !development? }
+    configure :production do
+      use Rack::SSL
+    end
 
     get(/^\/[\w_-]+\.db(?:\.tar\.[gx]z)?$/) do
       headers 'Cache-Control' => 'max-age=no-cache'
