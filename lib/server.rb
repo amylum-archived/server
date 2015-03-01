@@ -20,7 +20,7 @@ module Server
     end
 
     get(/^\/[\w_-]+\.db(?:\.tar\.[gx]z)?$/) do
-      headers 'Cache-Control' => 'max-age=no-cache'
+      headers 'Cache-Control' => 'max-age=60'
       serve 'repo.db', 500, :no_db
     end
 
