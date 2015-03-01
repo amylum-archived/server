@@ -12,15 +12,13 @@ module Server
   ##
   # Main Sinatra class, routes incoming requests
   class Base < Sinatra::Base
-    before do
+    get(/^\/#{REPO_NAME}\.db(?:\.tar\.[gx]z)?$/) do
       content_type 'application/octet-stream'
-    end
-
-    get(/^\/#{REPO_NAME}\.db(?:\.tar\.gz)?$/) do
       REPO.serve 'repo.db'
     end
 
     get(/^\/([\w-]+)\.pkg\.tar\.xz$/) do |package|
+      content_type 'application/octet-stream'
       REPO.serve "#{package}.pkg.tar.xz"
     end
   end
