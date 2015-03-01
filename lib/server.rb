@@ -1,21 +1,5 @@
 require 'sinatra/base'
 require 's3repo'
-require 'secure_headers'
-
-SecureHeaders::Configuration.configure do |config|
-  config.hsts = { max_age: 2_592_000, include_subdomains: true}
-  config.x_frame_options = 'DENY'
-  config.x_content_type_options = 'nosniff'
-  config.x_xss_protection = {value: 1, :mode => 'block'}
-  config.x_download_options = 'noopen'
-  config.x_permitted_cross_domain_policies = 'none'
-  config.csp = {
-    enforce: true,
-    default_src: 'https: inline eval',
-    img_src: 'none',
-    frame_src: 'none'
-  }
-end
 
 ##
 # Server module, defines constants and main Sinatra class
@@ -31,7 +15,7 @@ module Server
     set :views, 'views'
 
     before do
-      headers 'Strict-Transport-Security' => 'max-age=2592000'
+      headers 'Strict-Transport-Security' => 'max-age=31536000'
     end
 
     get(/^\/[\w_-]+\.db(?:\.tar\.[gx]z)?$/) do

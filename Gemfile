@@ -5,7 +5,6 @@ gem 'sinatra', '~> 1.4.5'
 gem 'thin', '~> 1.6.2'
 gem 's3repo', '~> 0.0.3'
 gem 'herokuconf', '~> 0.0.6'
-gem 'secure_headers', '~> 2.0.0'
 
 group :development do
   gem 'rubocop', '~> 0.29.0'
