@@ -17,7 +17,7 @@ module Server
       REPO.serve 'repo.db'
     end
 
-    get(/^\/([\w-]+)\.pkg\.tar\.xz$/) do |package|
+    get(/^\/([\w-_]+)\.pkg\.tar\.xz$/) do |package|
       content_type 'application/octet-stream'
       REPO.serve "#{package}.pkg.tar.xz"
     end
