@@ -12,20 +12,28 @@ module Server
   ##
   # Main Sinatra class, routes incoming requests
   class Base < Sinatra::Base
-    get(/^\/#{REPO_NAME}\.db(?:\.tar\.[gx]z)?$/) do
-      serve 'repo.db', 500, 'Repo Database missing, please contact maintainer'
+    set :views, 'views'
+
+    get(/^\/[\w_-]+\.db(?:\.tar\.[gx]z)?$/) do
+      serve 'repo.db', 500, :no_db
     end
 
     get(/^\/([\w_.-]+\.pkg\.tar\.xz)$/) do |package|
-      halt(404, 'Package not found') unless REPO.packages.include? package
-      serve package, 404, 'Package not found'
+      halt(404, erb(:missing)) unless REPO.include? package
+      serve package, 404, :missing
     end
 
-    def serve(key, fail_code, fail_msg)
-      res = REPO.serve 'key'
-      halt(fail_code, fail_msg) unless res
+    def serve(key, fail_code, fail_template)
+      res = REPO.serve key
+      halt(fail_code, erb(fail_template)) unless res
       content_type 'application/octet-stream'
       res
+    end
+
+    get '/' do
+      @repo = REPO_NAME
+      @packages = REPO.packages
+      erb :index
     end
   end
 end
