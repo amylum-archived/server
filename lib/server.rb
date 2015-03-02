@@ -32,15 +32,15 @@ module Server
     end
 
     get(/^\/([\w_.-]+\.pkg\.tar\.xz)$/) do |package|
-      halt(404, erb(:missing)) unless REPO.include? package
+      halt(404, erb(:no_package)) unless REPO.include? package
       headers 'Cache-Control' => 'max-age=86400'
-      serve package, 404, :missing
+      serve package, 404, :no_package
     end
 
     get(/^\/([\w_.-]+\.pkg\.tar\.xz)\.sig$/) do |package|
-      halt(404, erb(:missing)) unless REPO.include? package
+      halt(404, erb(:no_package)) unless REPO.include? package
       headers 'Cache-Control' => 'max-age=60'
-      serve package + '.sig', 404, :missing
+      serve package + '.sig', 404, :no_sig
     end
 
     def serve(key, fail_code, fail_template)
