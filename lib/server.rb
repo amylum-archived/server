@@ -19,6 +19,13 @@ module Server
       use Rack::SSL
     end
 
+    get '/' do
+      @repo = REPO_NAME
+      @packages = REPO.packages
+      headers 'Cache-Control' => 'max-age=60'
+      erb :index
+    end
+
     get(/^\/[\w_-]+\.db(?:\.tar\.[gx]z)?$/) do
       headers 'Cache-Control' => 'max-age=60'
       serve 'repo.db', 500, :no_db
@@ -35,12 +42,6 @@ module Server
       halt(fail_code, erb(fail_template)) unless res
       content_type 'application/octet-stream'
       res
-    end
-
-    get '/' do
-      @repo = REPO_NAME
-      @packages = REPO.packages
-      erb :index
     end
   end
 end
