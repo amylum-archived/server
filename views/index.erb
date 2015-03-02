@@ -18,7 +18,7 @@ Server = https://repo.scrtybybscrty.org</pre>
     <h4>Packages:</h4>
     <ul>
       <% @packages.each do |package| %>
-        <li><a href="/<%= package.key %>"><%= package.key %></a></li>
+        <li><a href="/<%= package.key %>"><%= package.key %></a> -- (<a href="/<%= package.key %>.sig">sig</a>)</li>
       <% end %>
     </ul>
   </body>
