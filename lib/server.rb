@@ -38,7 +38,7 @@ module Server
 
     get(/^\/([\w_.-]+\.pkg\.tar\.xz)$/) do |package|
       halt(404, erb(:no_package)) unless REPO.include? package
-      headers 'Cache-Control' => 'max-age=86400'
+      headers 'Cache-Control' => 'max-age=60'
       serve package, 404, :no_package
     end
 
