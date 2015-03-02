@@ -37,6 +37,12 @@ module Server
       serve package, 404, :missing
     end
 
+    get(/^\/([\w_.-]+\.pkg\.tar\.xz)\.sig$/) do |package|
+      halt(404, erb(:missing)) unless REPO.include? package
+      headers 'Cache-Control' => 'max-age=60'
+      serve package + '.sig', 404, :missing
+    end
+
     def serve(key, fail_code, fail_template)
       res = REPO.serve key
       halt(fail_code, erb(fail_template)) unless res
