@@ -75,7 +75,7 @@ GEM
       rainbow (>= 1.99.1, < 3.0)
       ruby-progressbar (~> 1.4)
     ruby-progressbar (1.7.1)
-    s3repo (0.1.1)
+    s3repo (0.1.4)
       aws-sdk (~> 2.0.0)
       basiccache (~> 1.0.0)
       mercenary (~> 0.3.4)
