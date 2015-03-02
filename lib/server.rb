@@ -31,6 +31,11 @@ module Server
       serve 'repo.db', 500, :no_db
     end
 
+    get(/^\/[\w_-]+\.db(?:\.tar\.[gx]z.sig)?$/) do
+      headers 'Cache-Control' => 'max-age=60'
+      serve 'repo.db.sig', 500, :no_sig
+    end
+
     get(/^\/([\w_.-]+\.pkg\.tar\.xz)$/) do |package|
       halt(404, erb(:no_package)) unless REPO.include? package
       headers 'Cache-Control' => 'max-age=86400'
