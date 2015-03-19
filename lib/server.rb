@@ -1,5 +1,4 @@
 require 'sinatra/base'
-require 'newrelic_rpm'
 require 's3repo'
 require 'rack/ssl'
 

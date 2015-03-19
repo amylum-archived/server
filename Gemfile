@@ -6,7 +6,6 @@ gem 'thin', '~> 1.6.2'
 gem 's3repo', '~> 0.3.2'
 gem 'herokuconf', '~> 0.0.6'
 gem 'rack-ssl', '~> 1.4.1'
-gem 'newrelic_rpm', '~> 3.10.0.279'
 
 group :development do
   gem 'rubocop', '~> 0.29.0'
