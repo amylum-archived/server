@@ -14,7 +14,7 @@ GEM
       aws-sdk-core (= 2.0.34)
     basiccache (1.0.0)
     builder (3.2.2)
-    coveralls (0.7.12)
+    coveralls (0.8.0)
       multi_json (~> 1.10)
       rest-client (>= 1.6.8, < 2)
       simplecov (~> 0.9.1)
@@ -108,7 +108,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  coveralls (~> 0.7.3)
+  coveralls (~> 0.8.0)
   fuubar (~> 2.0.0)
   herokuconf (~> 0.0.6)
   rack-ssl (~> 1.4.1)
