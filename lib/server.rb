@@ -26,23 +26,23 @@ module Server
       erb :index
     end
 
-    get(%r{^\/[\w_-]+\.db(?:\.tar\.[gx]z)?$}) do
+    get(%r{\A\/[\w_-]+\.db(?:\.tar\.[gx]z)?\z}) do
       headers 'Cache-Control' => 'max-age=60'
       serve 'repo.db', 500, :no_db
     end
 
-    get(%r{^\/[\w_-]+\.db(?:\.tar\.[gx]z)?\.sig$}) do
+    get(%r{\A\/[\w_-]+\.db(?:\.tar\.[gx]z)?\.sig\z}) do
       headers 'Cache-Control' => 'max-age=60'
       serve 'repo.db.sig', 500, :no_sig
     end
 
-    get(%r{^\/([\w_.-]+\.pkg\.tar\.xz)$}) do |package|
+    get(%r{\A\/([\w_.-]+\.pkg\.tar\.xz)\z}) do |package|
       halt(404, erb(:no_package)) unless REPO.include? package
       headers 'Cache-Control' => 'max-age=60'
       serve package, 404, :no_package
     end
 
-    get(%r{^\/([\w_.-]+\.pkg\.tar\.xz)\.sig$}) do |package|
+    get(%r{\A\/([\w_.-]+\.pkg\.tar\.xz)\.sig\z}) do |package|
       halt(404, erb(:no_package)) unless REPO.include? package
       headers 'Cache-Control' => 'max-age=60'
       serve package + '.sig', 404, :no_sig
