@@ -16,7 +16,7 @@ module Server
     set :views, 'views'
 
     configure :production do
-      use Rack::SSL
+      use Rack::SSL if ENV.include? 'SSL_DIR'
     end
 
     get '/' do
