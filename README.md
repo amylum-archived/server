@@ -15,9 +15,9 @@ Proxy server for packages stored in S3
 
 First, you need packages on S3 to serve. The packages can be managed with the [s3repo](https://github.com/amylum/s3repo) gem. For an example, see [my repo repo](https://github.com/amylum/repo).
 
-### On Heroku
+### Running the server
 
-Create an application and set the following variables:
+I run this inside my [dock0/amylum docker container](https://github.com/dock0/amylum). Instructions for that can be found in its README, but it essentially amounts to setting the following env vars and running the container (which runs the server's procfile):
 
 * AWS_ACCESS_KEY_ID: access key for S3 credentials
 * AWS_SECRET_ACCESS_KEY: secret key for S3 credentials
@@ -25,8 +25,6 @@ Create an application and set the following variables:
 * S3_BUCKET: bucket name where packages are stored
 * MAINTAINER_EMAIL: email to show on error pages
 * RACK_ENV: production
-
-Fork this repo and push it to the Heroku app. Set up custom DNS if desired.
 
 ## License
 
