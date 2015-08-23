@@ -1,3 +1,4 @@
+require 'eventmachine-le'
 require 'sinatra/base'
 require 's3repo'
 require 'rack/ssl'
