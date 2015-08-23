@@ -25,6 +25,7 @@ I run this inside my [dock0/amylum docker container](https://github.com/dock0/am
 * S3_BUCKET: bucket name where packages are stored
 * MAINTAINER_EMAIL: email to show on error pages
 * RACK_ENV: production
+* SSL_DIR: directory for finding ./cert and ./key for SSL
 
 ## License
 
