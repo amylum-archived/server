@@ -1,7 +1,6 @@
 ruby '2.2.3'
 source 'https://rubygems.org'
 
-gem 'eventmachine-le', '1.1.7'
 gem 'sinatra', '~> 1.4.6'
 gem 'thin', '~> 1.6.2'
 gem 's3repo', '~> 0.3.2'
