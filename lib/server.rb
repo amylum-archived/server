@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require 's3repo'
 require 'rack/ssl'
+require 'tilt/erb'
 
 ##
 # Server module, defines constants and main Sinatra class
