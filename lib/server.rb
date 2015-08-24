@@ -17,6 +17,7 @@ module Server
 
     configure :production do
       use Rack::SSL if ENV.include? 'SSL_DIR'
+      set :server, :puma
     end
 
     get '/' do

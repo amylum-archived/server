@@ -1,1 +1,1 @@
-web: bundle exec thin start -a '[::]' -p $PORT
+web: bundle exec puma
