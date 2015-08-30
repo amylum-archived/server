@@ -24,8 +24,10 @@ I run this inside my [dock0/amylum docker container](https://github.com/dock0/am
 * AWS_REGION: region of S3 bucket
 * S3_BUCKET: bucket name where packages are stored
 * MAINTAINER_EMAIL: email to show on error pages
-* HTTP_PORT: port for HTTP (defaults to 80)
-* HTTPS_PORT: port for HTTPS (only used if SSL_DIR is set, defaults to 443)
+* ADDRESS: address to bind to, defaults to localhost
+* HTTP_PORT: port for HTTP (defaults to 8080)
+* PUMA_SSL: enable SSL listening
+* HTTPS_PORT: port for HTTPS (defaults to 8443)
 * SSL_DIR: directory for finding ./cert and ./key for SSL
 
 ## License
