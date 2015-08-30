@@ -11,4 +11,4 @@ if ENV['PUMA_SSL']
     key: ENV['SSL_DIR'] + '/key',
     cert: ENV['SSL_DIR'] + '/cert'
   )
-else
+end
