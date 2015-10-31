@@ -2,9 +2,9 @@ server
 ======
 
 [![Dependency Status](https://img.shields.io/gemnasium/amylum/server.svg)](https://gemnasium.com/amylum/server)
-[![Code Climate](https://img.shields.io/codeclimate/github/amylum/server.svg)](https://codeclimate.com/github/amylum/server)
-[![Coverage Status](https://img.shields.io/coveralls/amylum/server.svg)](https://coveralls.io/r/amylum/server)
-[![Build Status](https://img.shields.io/travis/amylum/server.svg)](https://travis-ci.org/amylum/server)
+[![Build Status](https://img.shields.io/circleci/project/amylum/server.svg)](https://circleci.com/gh/amylum/server)
+[![Coverage Status](https://img.shields.io/codecov/c/github/amylum/server.svg)](https://codecov.io/github/amylum/server)
+[![Code Quality](https://img.shields.io/codacy/eb815cbd7e03494cb1f22ca3a974e9b5.svg)](https://www.codacy.com/app/akerl/server)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 
 Proxy server for packages stored in S3
