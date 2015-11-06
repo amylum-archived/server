@@ -2,7 +2,7 @@ ruby '2.2.3'
 source 'https://rubygems.org'
 
 gem 'sinatra', '~> 1.4.6'
-gem 'puma', '~> 2.14.0'
+gem 'puma', '~> 2.15.0'
 gem 's3repo', '~> 0.3.2'
 gem 'herokuconf', '~> 0.0.6'
 gem 'rack-ssl', '~> 1.4.1'
