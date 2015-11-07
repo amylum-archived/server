@@ -8,7 +8,7 @@ gem 'herokuconf', '~> 0.0.6'
 gem 'rack-ssl', '~> 1.4.1'
 
 group :development do
-  gem 'rubocop', '~> 0.34.0'
+  gem 'rubocop', '~> 0.35.0'
   gem 'rake', '~> 10.4.0'
   gem 'codecov', '~> 0.1.1'
   gem 'rspec', '~> 3.3.0'
