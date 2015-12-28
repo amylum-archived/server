@@ -1,11 +1,11 @@
 item do
   expected do
-    gemnasium
-    slug 'amylum/server'
+    static
+    set 'green'
   end
 
   actual do
-    static
-    set 'green'
+    gemnasium
+    slug 'amylum/server'
   end
 end
