@@ -1,0 +1,11 @@
+item do
+  expected do
+    gemnasium
+    slug 'amylum/server'
+  end
+
+  actual do
+    static
+    set 'green'
+  end
+end
