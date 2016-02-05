@@ -7,7 +7,7 @@ require 'tilt/erb'
 # Server module, defines constants and main Sinatra class
 module Server
   REPO_NAME = ENV['S3REPO_NAME'] || ENV['S3_BUCKET']
-  fail('Please set S3REPO_NAME or S3_BUCKET') unless REPO_NAME
+  raise('Please set S3REPO_NAME or S3_BUCKET') unless REPO_NAME
 
   REPO = S3Repo.new
 
