@@ -2,12 +2,12 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.2.0)
-    aws-sdk (2.2.25)
-      aws-sdk-resources (= 2.2.25)
-    aws-sdk-core (2.2.25)
+    aws-sdk (2.2.26)
+      aws-sdk-resources (= 2.2.26)
+    aws-sdk-core (2.2.26)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.2.25)
-      aws-sdk-core (= 2.2.25)
+    aws-sdk-resources (2.2.26)
+      aws-sdk-core (= 2.2.26)
     basiccache (1.0.0)
     codecov (0.1.4)
       json
@@ -40,7 +40,7 @@ GEM
     rack-ssl (1.4.1)
       rack
     rainbow (2.1.0)
-    rake (11.0.1)
+    rake (11.1.0)
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
       rspec-expectations (~> 3.4.0)
@@ -87,7 +87,7 @@ DEPENDENCIES
   herokuconf (~> 0.0.8)
   puma (~> 3.1.0)
   rack-ssl (~> 1.4.1)
-  rake (~> 11.0.0)
+  rake (~> 11.1.0)
   rspec (~> 3.4.0)
   rubocop (~> 0.38.0)
   s3repo (~> 1.0.0)
