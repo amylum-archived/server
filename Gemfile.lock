@@ -40,7 +40,7 @@ GEM
     rack-ssl (1.4.1)
       rack
     rainbow (2.1.0)
-    rake (11.1.0)
+    rake (11.1.1)
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
       rspec-expectations (~> 3.4.0)
