@@ -2,12 +2,12 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.3.0)
-    aws-sdk (2.2.37)
-      aws-sdk-resources (= 2.2.37)
-    aws-sdk-core (2.2.37)
+    aws-sdk (2.3.21)
+      aws-sdk-resources (= 2.3.21)
+    aws-sdk-core (2.3.21)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.2.37)
-      aws-sdk-core (= 2.2.37)
+    aws-sdk-resources (2.3.21)
+      aws-sdk-core (= 2.3.21)
     basiccache (1.0.0)
     codecov (0.1.5)
       json
@@ -15,8 +15,8 @@ GEM
       url
     diff-lcs (1.2.5)
     docile (1.1.5)
-    excon (0.50.1)
-    fuubar (2.0.0)
+    excon (0.51.0)
+    fuubar (2.1.0)
       rspec (~> 3.0)
       ruby-progressbar (~> 1.4)
     heroku-api (0.3.23)
@@ -62,7 +62,7 @@ GEM
       unicode-display_width (~> 1.0, >= 1.0.1)
     ruby-progressbar (1.8.1)
     s3repo (1.0.0)
-      aws-sdk (~> 2.2.0)
+      aws-sdk (~> 2.3.0)
       basiccache (~> 1.0.0)
       mercenary (~> 0.3.4)
     simplecov (0.12.0)
@@ -83,7 +83,7 @@ PLATFORMS
 
 DEPENDENCIES
   codecov (~> 0.1.1)
-  fuubar (~> 2.0.0)
+  fuubar (~> 2.1.0)
   herokuconf (~> 0.0.8)
   puma (~> 3.4.0)
   rack-ssl (~> 1.4.1)
