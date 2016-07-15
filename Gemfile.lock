@@ -2,12 +2,12 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.3.0)
-    aws-sdk (2.3.21)
-      aws-sdk-resources (= 2.3.21)
-    aws-sdk-core (2.3.21)
+    aws-sdk (2.3.22)
+      aws-sdk-resources (= 2.3.22)
+    aws-sdk-core (2.3.22)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.3.21)
-      aws-sdk-core (= 2.3.21)
+    aws-sdk-resources (2.3.22)
+      aws-sdk-core (= 2.3.22)
     basiccache (1.0.0)
     codecov (0.1.5)
       json
@@ -16,7 +16,7 @@ GEM
     diff-lcs (1.2.5)
     docile (1.1.5)
     excon (0.51.0)
-    fuubar (2.1.0)
+    fuubar (2.1.1)
       rspec (~> 3.0)
       ruby-progressbar (~> 1.4)
     heroku-api (0.3.23)
