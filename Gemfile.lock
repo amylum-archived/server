@@ -9,7 +9,7 @@ GEM
     aws-sdk-resources (2.2.37)
       aws-sdk-core (= 2.2.37)
     basiccache (1.0.0)
-    codecov (0.1.6)
+    codecov (0.1.7)
       json
       simplecov
       url
