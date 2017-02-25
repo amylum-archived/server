@@ -9,13 +9,13 @@ GEM
     aws-sdk-resources (2.2.37)
       aws-sdk-core (= 2.2.37)
     basiccache (1.0.0)
-    codecov (0.1.9)
+    codecov (0.1.10)
       json
       simplecov
       url
     diff-lcs (1.3)
     docile (1.1.5)
-    excon (0.54.0)
+    excon (0.55.0)
     fuubar (2.2.0)
       rspec-core (~> 3.0)
       ruby-progressbar (~> 1.4)
@@ -30,10 +30,10 @@ GEM
     mercenary (0.3.6)
     multi_json (1.12.1)
     netrc (0.10.3)
-    parser (2.3.3.1)
+    parser (2.4.0.0)
       ast (~> 2.2)
     powerpack (0.1.1)
-    puma (3.7.0)
+    puma (3.7.1)
     rack (1.6.5)
     rack-protection (1.5.3)
       rack
