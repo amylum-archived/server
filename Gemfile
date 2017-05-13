@@ -2,7 +2,7 @@ path = File.dirname(ENV['BUNDLE_GEMFILE'] || '.')
 ruby File.read(File.join(path, '.circle-ruby')).chomp
 source 'https://rubygems.org'
 
-gem 'sinatra', '~> 1.4.6'
+gem 'sinatra', '~> 2.0.0'
 gem 'puma', '~> 3.8.0'
 gem 's3repo', '~> 1.0.0'
 gem 'herokuconf', '~> 0.0.8'
