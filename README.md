@@ -1,3 +1,5 @@
+**Inactive Project:** I've stopped using this project in favor of serving directly from S3 + CloudFront
+
 server
 ======
 
