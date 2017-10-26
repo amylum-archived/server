@@ -45,7 +45,7 @@ GEM
       rack
     rainbow (2.2.2)
       rake
-    rake (12.1.0)
+    rake (12.2.1)
     rspec (3.7.0)
       rspec-core (~> 3.7.0)
       rspec-expectations (~> 3.7.0)
@@ -95,7 +95,7 @@ DEPENDENCIES
   herokuconf (~> 0.0.8)
   puma (~> 3.10.0)
   rack-ssl (~> 1.4.1)
-  rake (~> 12.1.0)
+  rake (~> 12.2.1)
   rspec (~> 3.7.0)
   rubocop (~> 0.51.0)
   s3repo (~> 1.0.0)
