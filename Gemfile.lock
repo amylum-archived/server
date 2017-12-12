@@ -19,7 +19,7 @@ GEM
     fuubar (2.2.0)
       rspec-core (~> 3.0)
       ruby-progressbar (~> 1.4)
-    goodcop (0.1.0)
+    goodcop (0.1.1)
       fuubar (~> 2.2.0)
     heroku-api (0.3.23)
       excon (~> 0.44)
@@ -90,7 +90,7 @@ PLATFORMS
 DEPENDENCIES
   codecov (~> 0.1.1)
   fuubar (~> 2.2.0)
-  goodcop (~> 0.1.0)
+  goodcop (~> 0.1.1)
   herokuconf (~> 0.0.8)
   puma (~> 3.10.0)
   rack-ssl (~> 1.4.1)
