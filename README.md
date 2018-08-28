@@ -3,7 +3,7 @@
 server
 ======
 
-[![Build Status](https://img.shields.io/circleci/project/amylum/server/master.svg)](https://circleci.com/gh/amylum/server)
+[![Build Status](https://img.shields.io/travis/com/amylum/server.svg)](https://travis-ci.com/amylum/server)
 [![Coverage Status](https://img.shields.io/codecov/c/github/amylum/server.svg)](https://codecov.io/github/amylum/server)
 [![Code Quality](https://img.shields.io/codacy/eb815cbd7e03494cb1f22ca3a974e9b5.svg)](https://www.codacy.com/app/akerl/server)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
