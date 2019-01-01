@@ -40,7 +40,7 @@ GEM
     powerpack (0.1.2)
     puma (3.10.0)
     rack (2.0.6)
-    rack-protection (2.0.4)
+    rack-protection (2.0.5)
       rack
     rack-ssl (1.4.1)
       rack
@@ -59,7 +59,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
-    rubocop (0.61.1)
+    rubocop (0.62.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.5, != 2.5.1.1)
@@ -77,13 +77,13 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.2)
-    sinatra (2.0.4)
+    sinatra (2.0.5)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.4)
+      rack-protection (= 2.0.5)
       tilt (~> 2.0)
     tilt (2.0.9)
-    unicode-display_width (1.4.0)
+    unicode-display_width (1.4.1)
     url (0.3.2)
 
 PLATFORMS
@@ -98,12 +98,12 @@ DEPENDENCIES
   rack-ssl (~> 1.4.1)
   rake (~> 12.3.0)
   rspec (~> 3.8.0)
-  rubocop (~> 0.61.1)
+  rubocop (~> 0.62.0)
   s3repo (~> 1.0.0)
   sinatra (~> 2.0.0)
 
 RUBY VERSION
-   ruby 2.5.3p105
+   ruby 2.6.0p0
 
 BUNDLED WITH
-   1.17.1
+   1.17.3
