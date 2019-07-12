@@ -93,7 +93,7 @@ PLATFORMS
 DEPENDENCIES
   codecov (~> 0.1.1)
   fuubar (~> 2.4.1)
-  goodcop (~> 0.7.0)
+  goodcop (~> 0.7.1)
   herokuconf (~> 0.0.8)
   puma (~> 3.10.0)
   rack-ssl (~> 1.4.1)
