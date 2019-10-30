@@ -10,5 +10,5 @@ gem 'sinatra', '~> 2.0.0'
 
 group :development do
   gem 'codecov', '~> 0.1.1'
-  gem 'goodcop', '~> 0.7.1'
+  gem 'goodcop', '~> 0.8.0'
 end
